@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 	<title>Reservia</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 <body>
@@ -11,28 +12,220 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href="#">Hébergements</a></li>
+				<li><a href="#lodging">Hébergements</a></li>
 				<li><a href="#">Activités</a></li>
 				<li><a href="#">S'inscrire</a></li>
 			</ul>
 		</nav>
 	</header>
-	<div id="setting">
 
-		<div>
+	<div id="search_banner">
 
+		<div id="title">
+			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+			<p>En plein centre ville ou en pleine nature</p>
 		</div>
-		<div>
-
+		<div id="search_bar">
+			<button id="position">
+				<img id="info_logo" alt="info" src="logo/map-marker-alt-solid.svg" height="20" width="20"/>
+			</button>
+			<input type="text" name="search" id="search" placeholder="Marseille,France" size="" maxlength="">
+			<button id="search_button">Rechercher</button> 
 		</div>
-		<div>
-
+		<div id="filter">
+			<p>
+			Filtres
+			<button id="economic" class="button_filter">
+				<img id="money_logo" alt="money" src="logo/money-bill-wave-solid.svg" height="20" width="20"/>
+				Economique
+			</button>
+			<button id="family" class="button_filter">
+				<img id="child_logo" alt="child" src="logo/child-solid.svg" height="20" width="20"/>
+				Familial
+			</button>
+			<button id="romantic" class="button_filter">
+				<img id="heart_logo" alt="heart" src="logo/heart-solid.svg" height="20" width="20"/>
+				Romantique
+			</button>
+			<button id="pet" class="button_filter">
+				<img id="info_logo" alt="info" src="logo/dog-solid.svg" height="20" width="20"/> 
+				Animaux autorisés
+			</button>
+			</p>
 		</div>
-		<div>
-
+		<div id="info">
+			<p>
+			<img id="info_logo" alt="info" src="logo/info-solid.svg" height="20" width="20"/> 
+			Plus de 500 logements sont disponibles dans cette ville
+			</p>
 		</div>
 
 	</div>
+	<main>
+
+		<div id="lodging">
+			<div id="lodging_title">
+				<h1>Hébergements à Marseille</h1>
+			</div>
+			<div id=lodging_thumbnail>
+					<a href="#" class="thumbnail_link">
+						<div class="l_thumbnail">
+						<img alt="Auberge de la cannebière" src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="100" height="100"/>
+						<h2>Auberge de la cannebière</h2>
+						<p>Nuit à partir de 25 &euro;</p>
+						</div>
+					</a>
+					<a href="#"class="thumbnail_link">
+						<div class="l_thumbnail">
+						<img alt="Hôtel du port" src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="100" height="100"/>
+						<h2>Hotêl du port</h2>
+						<p>Nuit à partir de 52 &euro;</p>
+						</div>					
+					</a>
+					<a href="#" class="thumbnail_link">
+						<div class="l_thumbnail">
+						<img alt="Hôtel Les mouettes" src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" width="100" height="100"/>
+						<h2>Hotêl Les mouettes</h2>
+						<p>Nuit à partir de 76 &euro;</p>
+						</div>						
+					</a>	
+					<a href="#" class="thumbnail_link">
+						<div class="l_thumbnail">
+						<img alt="Hôtel de la mer" src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width="100" height="100"/>
+						<h2>Hôtel de la mer</h2>
+						<p>Nuit à partir de 46 &euro;</p>
+						</div>						
+					</a>
+					<a href="#" class="thumbnail_link">
+						<div class="l_thumbnail">
+						<img alt="Auberge Le Panier" src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width="100" height="100"/>
+						<h2>Auberge Le Panier</h2>
+						<p>Nuit à partir de 23 &euro;</p>
+						</div>						
+					</a>
+					<a href="#" class="thumbnail_link">
+						<div class="l_thumbnail">
+						<img alt="Hotêl chez Amina" src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width="100" height="100"/>
+						<h2>Hôtel chez Amina</h2>
+						<p>Nuit à partir de 96 &euro;</p>
+						</div>						
+					</a>
+			</div>
+			<div id=show_more>
+				<a href="#">Afficher plus</a>
+			</div>
+		</div>
+
+		<aside id="popular">
+			<div id="popular_title">
+				<h1>Les plus populaires</h1>
+				<img id="graph_logo" alt="graphic" src="logo/chart-line-solid.svg" height="20" width="20" />
+			</div>
+			<div id="popular_thumbnail">
+				<a href="#" class="thumbnail_link">
+					<div class="p_thumbnail">
+						<img alt="" src="" width="100" height="100"/>
+						<h2></h2>
+						<p></p>
+					</div> 
+				</a>
+				<a href="#" class="thumbnail_link">
+					<div class="p_thumbnail">
+						<img alt="" src="" width="100" height="100"/>
+						<h2></h2>
+						<p></p>
+					</div> 
+				</a>
+				<a href="#" class="thumbnail_link">
+					<div class="p_thumbnail">
+						<img alt="" src="" width="100" height="100"/>
+						<h2></h2>
+						<p></p>
+					</div> 
+				</a>
+			</div>
+
+		</aside>
+
+		<div id="activities">
+			<div id="activities_title">
+				<h1>Activités à Marseille</h1>				
+			</div>
+			<div id="activities_thumbnail">
+				<div class="act_thmb">
+					<a href="#" class="thumbnail_link">
+						<div class="a_thumbnail">
+							<img alt="" src="" width="100" height="100"/>
+							<h2></h2>
+						</div> 
+					</a>
+				</div>
+				<div class="act_thmb">
+					<a href="#" class="thumbnail_link">
+						<div class="a_thumbnail">
+							<img alt="" src="" width="100" height="100"/>
+							<h2></h2>
+						</div> 
+					</a>
+					<a href="#" class="thumbnail_link">
+						<div class="a_thumbnail">
+							<img alt="" src="" width="100" height="100"/>
+							<h2></h2>
+						</div> 
+					</a>
+				</div>
+				<div class="act_thmb">
+					<a href="#" class="thumbnail_link">
+						<div class="a_thumbnail">
+							<img alt="" src="" width="100" height="100"/>
+							<h2></h2>
+						</div> 
+					</a>
+				</div>
+				<div class="act_thmb">
+					<a href="#" class="thumbnail_link">
+						<div class="a_thumbnail">
+							<img alt="" src="" width="100" height="100"/>
+							<h2></h2>
+						</div> 
+					</a>
+					<a href="#" class="thumbnail_link">
+						<div class="a_thumbnail">
+							<img alt="" src="" width="100" height="100"/>
+							<h2></h2>
+						</div> 
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer>
+
+		<div id="about">
+			<ul>
+				<li><a href="#">Fonctionnement du site</a></li>
+				<li><a href="#">Conditions générale de vente</a></li>
+				<li><a href="#">Données et confidentialité</a></li>
+			</ul>
+		</div>
+		<div id="our_lodging">
+			<ul>
+				<li><a href="#">Charte qualité</a></li>
+				<li><a href="#">Soumettre votre hôtel</a></li>
+			</ul>
+		</div>
+		<div id="Assistance">
+			<ul>
+				<li><a href="#">Centre d'aide</a></li>
+				<li><a href="#">Nous contacter</a></li>
+			</ul>
+		</div>
+		
+	</footer>
 
 </body>
 </html>
