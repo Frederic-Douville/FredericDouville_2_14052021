@@ -1,3 +1,108 @@
-h1{
-	color: red;
+@font-face
+{
+	font-family: 'Raleway';
+	src:url(font/Raleway-VariableFont_wght.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+#bloc_page
+{
+	width: 900px;
+	margin:auto;
+}
+
+body
+{
+	font-family: 'Raleway';
+}
+
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+nav ul
+{
+	display: flex;
+	list-style: none;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a 
+{
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+#search_banner
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#lodging_popular
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+#lodging_thumbnail,#activities_thumbnail
+{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+#show_more a
+{
+	text-decoration: none;
+}
+
+.thumbnail_link
+{
+	text-decoration: none;
+}
+
+#popular_title
+{
+	display: flex;
+	justify-content: space-between;
+}
+.thumbnail_link2
+{
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+}
+
+footer
+{
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+footer ul
+{
+	display:block;
+	margin-inline-start: 0px;		
+}
+
+footer li
+{
+	list-style: none;
+}
+
+footer a
+{
+	text-decoration: none;
 }

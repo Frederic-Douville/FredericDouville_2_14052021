@@ -3,23 +3,27 @@
 <head>
 	<title>Reservia</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="Style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
+<div id="bloc_page">
 <body>
 	<header>
+
 		<div id="logo">
 			<img src="images/logo/Reservia.svg" alt="Reservia" />
 		</div>
 		<nav>
 			<ul>
 				<li><a href="#lodging">Hébergements</a></li>
-				<li><a href="#">Activités</a></li>
+				<li><a href="#activities">Activités</a></li>
 				<li><a href="#">S'inscrire</a></li>
 			</ul>
 		</nav>
+
 	</header>
 
-	<div id="search_banner">
+	<section id="search_banner">
 
 		<div id="title">
 			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -60,53 +64,57 @@
 			</p>
 		</div>
 
-	</div>
+	</section>
+
 	<main>
 
-		<div id="lodging">
+		<section id="lodging_popular">
+
+		<section id="lodging">
+
 			<div id="lodging_title">
-				<h1>Hébergements à Marseille</h1>
+				<h2>Hébergements à Marseille</h2>
 			</div>
 			<div id=lodging_thumbnail>
 					<a href="#" class="thumbnail_link">
 						<div class="l_thumbnail">
 						<img alt="Auberge de la cannebière" src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" width="100" height="100"/>
-						<h2>Auberge de la cannebière</h2>
+						<h3>Auberge de la cannebière</h3>
 						<p>Nuit à partir de 25 &euro;</p>
 						</div>
 					</a>
 					<a href="#"class="thumbnail_link">
 						<div class="l_thumbnail">
 						<img alt="Hôtel du port" src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" width="100" height="100"/>
-						<h2>Hotêl du port</h2>
+						<h3>Hotêl du port</h3>
 						<p>Nuit à partir de 52 &euro;</p>
 						</div>					
 					</a>
 					<a href="#" class="thumbnail_link">
 						<div class="l_thumbnail">
 						<img alt="Hôtel Les mouettes" src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" width="100" height="100"/>
-						<h2>Hotêl Les mouettes</h2>
+						<h3>Hotêl Les mouettes</h3>
 						<p>Nuit à partir de 76 &euro;</p>
 						</div>						
 					</a>	
 					<a href="#" class="thumbnail_link">
 						<div class="l_thumbnail">
 						<img alt="Hôtel de la mer" src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" width="100" height="100"/>
-						<h2>Hôtel de la mer</h2>
+						<h3>Hôtel de la mer</h3>
 						<p>Nuit à partir de 46 &euro;</p>
 						</div>						
 					</a>
 					<a href="#" class="thumbnail_link">
 						<div class="l_thumbnail">
 						<img alt="Auberge Le Panier" src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" width="100" height="100"/>
-						<h2>Auberge Le Panier</h2>
+						<h3>Auberge Le Panier</h3>
 						<p>Nuit à partir de 23 &euro;</p>
 						</div>						
 					</a>
 					<a href="#" class="thumbnail_link">
 						<div class="l_thumbnail">
 						<img alt="Hotêl chez Amina" src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" width="100" height="100"/>
-						<h2>Hôtel chez Amina</h2>
+						<h3>Hôtel chez Amina</h3>
 						<p>Nuit à partir de 96 &euro;</p>
 						</div>						
 					</a>
@@ -114,92 +122,103 @@
 			<div id=show_more>
 				<a href="#">Afficher plus</a>
 			</div>
-		</div>
+
+		</section>
 
 		<aside id="popular">
+
 			<div id="popular_title">
-				<h1>Les plus populaires</h1>
+				<h2>Les plus populaires</h2>
 				<img id="graph_logo" alt="graphic" src="logo/chart-line-solid.svg" height="20" width="20" />
 			</div>
 			<div id="popular_thumbnail">
-				<a href="#" class="thumbnail_link">
-					<div class="p_thumbnail">
-						<img alt="" src="" width="100" height="100"/>
-						<h2></h2>
-						<p></p>
+				<a href="#" class="thumbnail_link2">
+					<div>
+						<img alt="Hôtel le soleil du matin" src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" width="100" height="100"/>
+					</div> 
+					<div>
+						<h3>Hôtel Le soleil du matin</h3>
+						<p>Nuit à partir de 128 &euro;</p>
+					</div>
+				</a>
+				<a href="#" class="thumbnail_link2">
+					<div>
+						<img alt="Au coeur de l'eau Chambre d'hôtes" src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" width="100" height="100"/>
+					</div>
+					<div>
+						<h3>Au coeur de l'eau Chambre d'hôtes</h3>
+						<p>Nuit à partir de 71 &euro;</p>
 					</div> 
 				</a>
-				<a href="#" class="thumbnail_link">
-					<div class="p_thumbnail">
-						<img alt="" src="" width="100" height="100"/>
-						<h2></h2>
-						<p></p>
-					</div> 
-				</a>
-				<a href="#" class="thumbnail_link">
-					<div class="p_thumbnail">
-						<img alt="" src="" width="100" height="100"/>
-						<h2></h2>
-						<p></p>
+				<a href="#" class="thumbnail_link2">
+					<div>
+						<img alt="Hôtel Tout bleu et blanc" src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" width="100" height="100"/>
+					</div>
+					<div>
+						<h3>Hôtel Tout bleu et blanc</h3>
+						<p>Nuit à partir de 68 &euro;</p>
 					</div> 
 				</a>
 			</div>
 
 		</aside>
 
-		<div id="activities">
+		</section>
+
+		<section id="activities">
+
 			<div id="activities_title">
-				<h1>Activités à Marseille</h1>				
+				<h2>Activités à Marseille</h2>				
 			</div>
 			<div id="activities_thumbnail">
 				<div class="act_thmb">
 					<a href="#" class="thumbnail_link">
 						<div class="a_thumbnail">
-							<img alt="" src="" width="100" height="100"/>
-							<h2></h2>
+							<img alt="Vieux Port" src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" width="100" height="100"/>
+							<h3>Vieux Port</h3>
 						</div> 
 					</a>
 				</div>
 				<div class="act_thmb">
 					<a href="#" class="thumbnail_link">
 						<div class="a_thumbnail">
-							<img alt="" src="" width="100" height="100"/>
-							<h2></h2>
+							<img alt="Fort de Pomègues" src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" width="100" height="100"/>
+							<h3>Fort de Pomègues</h3>
 						</div> 
 					</a>
 					<a href="#" class="thumbnail_link">
 						<div class="a_thumbnail">
-							<img alt="" src="" width="100" height="100"/>
-							<h2></h2>
-						</div> 
-					</a>
-				</div>
-				<div class="act_thmb">
-					<a href="#" class="thumbnail_link">
-						<div class="a_thumbnail">
-							<img alt="" src="" width="100" height="100"/>
-							<h2></h2>
+							<img alt="Îles du Frioul" src="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" width="100" height="100"/>
+							<h3>Îles du Frioul</h3>
 						</div> 
 					</a>
 				</div>
 				<div class="act_thmb">
 					<a href="#" class="thumbnail_link">
 						<div class="a_thumbnail">
-							<img alt="" src="" width="100" height="100"/>
-							<h2></h2>
+							<img alt="Parc National des Calanques" src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" width="100" height="100"/>
+							<h3>Parc National des Calanques</h3>
+						</div> 
+					</a>
+				</div>
+				<div class="act_thmb">
+					<a href="#" class="thumbnail_link">
+						<div class="a_thumbnail">
+							<img alt="Notre-Dame-de-la-Garde" src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" width="100" height="100"/>
+							<h3>Notre-Dame-de-la-Garde</h3>
 						</div> 
 					</a>
 					<a href="#" class="thumbnail_link">
 						<div class="a_thumbnail">
-							<img alt="" src="" width="100" height="100"/>
-							<h2></h2>
+							<img alt="Parc Longchamp" src="images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" width="100" height="100"/>
+							<h3>Parc Longchamp</h3>
 						</div> 
 					</a>
 				</div>
 
 			</div>
 
-		</div>
+		</section>
 
 	</main>
 
@@ -207,6 +226,7 @@
 
 		<div id="about">
 			<ul>
+				<li><span class="footer_title">A propos</span></li>
 				<li><a href="#">Fonctionnement du site</a></li>
 				<li><a href="#">Conditions générale de vente</a></li>
 				<li><a href="#">Données et confidentialité</a></li>
@@ -214,12 +234,14 @@
 		</div>
 		<div id="our_lodging">
 			<ul>
+				<li><span class="footer_title">Nos hébergements</span></li>
 				<li><a href="#">Charte qualité</a></li>
 				<li><a href="#">Soumettre votre hôtel</a></li>
 			</ul>
 		</div>
 		<div id="Assistance">
 			<ul>
+				<li><span class="footer_title">Assistance</span></li>
 				<li><a href="#">Centre d'aide</a></li>
 				<li><a href="#">Nous contacter</a></li>
 			</ul>
@@ -228,4 +250,5 @@
 	</footer>
 
 </body>
+</div>
 </html>
