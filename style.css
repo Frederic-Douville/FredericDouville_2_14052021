@@ -1,3 +1,4 @@
+/************************* Font  *************************/
 @font-face
 {
 	font-family: 'Raleway';
@@ -6,9 +7,18 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Raleway_bold';
+	src: url(font/static/Raleway-Bold.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+/************************* Entire page *************************/
+
 #bloc_page
 {
-	width: 900px;
+	width: 1000px;
 	margin:auto;
 }
 
@@ -17,11 +27,13 @@ body
 	font-family: 'Raleway';
 }
 
+/************************* Header *************************/
 
 header
 {
 	display: flex;
 	justify-content: space-between;
+	align-content: center;
 }
 
 nav ul
@@ -32,14 +44,25 @@ nav ul
 
 nav li
 {
-	margin-right: 15px;
+	margin: 0 20px 0 20px ;
 }
 
 nav a 
 {
 	padding-bottom: 3px;
 	text-decoration: none;
+	color: #0065fc;
+	font-family: 'Raleway_Bold';
+	font-size: 13px;
 }
+
+nav span
+{
+	font-weight: bold;
+}
+
+/************************* Search banner *************************/
+
 
 #search_banner
 {
@@ -47,13 +70,133 @@ nav a
 	flex-direction: column;
 }
 
+/* Title */
+
+#title h1
+{
+	font-size: 18px;
+	font-family: 'Raleway_Bold';
+}
+
+#title p
+{
+	font-size: 13px;
+}
+
+/* Search bar */
+
+#search_bar
+{
+	display:flex;
+	flex-direction: row;
+	align-self: flex-start;
+	height: 40px;
+}
+
+#position
+{
+	background-color: #f2f2f2;
+	border-style: none;
+	border-radius: 10px 0 0 10px;
+	width: 12%;
+}
+
+#marker_logo
+{
+	width: 15px;
+	height: 15px;
+}
+
+#search
+{
+	width: 40%;
+	font-family: 'Raleway_Bold';
+	width: 50%;
+	border-color: #f2f2f2;
+	border-style: solid;
+}
+
+#search_button
+{
+	background-color: #0065fc;
+	color: white;
+	border-style: none;
+	border-radius: 0 10px 10px 0 ;
+	width:30%
+}
+
+/* Filters */
+
+#filter
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: 'Raleway_Bold';
+}
+
+.button_filter
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	font-family: 'Raleway_Bold';
+	color: black;
+}
+
+.button_circle
+{
+	background-color:#deebff;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#info
+{
+	display: flex;
+	flex-direction: row;
+	justify-content:flex-start; 
+	align-items: center;
+	margin:0 10px 0 10px;
+}
+#circle_info
+{
+	border-radius: 15px 15px 15px 15px;
+	width: 25px;
+	height:25px;
+	border-style: solid;
+	border-color: #f2f2f2;
+}
+
+#info_logo
+{
+	width: 15px;
+	height: 15px;
+	fill: #0065fc;	
+}
+
+/************************* lodging *************************/
+
 #lodging_popular
 {
 	display: flex;
 	justify-content: space-between;
 }
 
-#lodging_thumbnail,#activities_thumbnail
+#lodging
+{
+	background-color: #f2f2f2;
+}
+
+#lodging_title h2
+{
+	font-family: 'Raleway_Bold';
+	font-size: 18px;
+}
+
+#lodging_thumbnail
 {
 	display: flex;
 	justify-content: space-around;
@@ -62,47 +205,103 @@ nav a
 	
 }
 
+.thumbnail_link
+{
+	text-decoration: none;
+	color: black;
+	
+}
+
+.act_thmb
+{
+	align-items: stretch;
+}
+
 #show_more a
 {
 	text-decoration: none;
 }
 
-.thumbnail_link
+/************************* Popular *************************/
+
+#popular
 {
-	text-decoration: none;
+	background-color: #f2f2f2;
 }
 
 #popular_title
 {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
+
+#popular_title h2
+{
+	font-family: 'Raleway_Bold';
+	font-size: 18px;
+}
+
 .thumbnail_link2
 {
 	display: flex;
 	flex-direction: row;
 	text-decoration: none;
+	color: black;
 }
+
+/************************* Activities *************************/
+
+#activities_title h2
+{
+	font-family: 'Raleway_Bold';
+	font-size: 18px;
+}
+
+#activities_thumbnail
+{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;	
+}
+
+/************************* Footer *************************/
 
 footer
 {
 	display: flex;
 	justify-content: flex-start;
+	background-color: #f2f2f2;
 }
 
 
+footer div
+{
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-right: 60px;		
+}
+
 footer ul
 {
-	display:block;
-	margin-inline-start: 0px;		
+	font-size: 13px;
+}
+
+.footer_title
+{
+	font-family: 'Raleway_Bold';	
 }
 
 footer li
 {
 	list-style: none;
+	margin: 10px 0 10px 0;
 }
 
 footer a
 {
 	text-decoration: none;
+	color: black;
 }
