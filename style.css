@@ -27,6 +27,14 @@ body
 	font-family: 'Raleway';
 }
 
+main
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 /************************* Header *************************/
 
 header
@@ -34,6 +42,7 @@ header
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
+	margin: 0 0 15px 0;
 }
 
 nav ul
@@ -52,13 +61,18 @@ nav a
 	padding-bottom: 3px;
 	text-decoration: none;
 	color: #0065fc;
-	font-family: 'Raleway_Bold';
 	font-size: 13px;
+	font-weight: bold;
 }
 
 nav span
 {
-	font-weight: bold;
+	font-family: 'Raleway_Bold';
+}
+
+nav a:hover
+{
+	color:black;
 }
 
 /************************* Search banner *************************/
@@ -81,6 +95,7 @@ nav span
 #title p
 {
 	font-size: 13px;
+	margin: -10px 0 15px 0;
 }
 
 /* Search bar */
@@ -91,6 +106,7 @@ nav span
 	flex-direction: row;
 	align-self: flex-start;
 	height: 40px;
+	margin: 0 0 15px 0;
 }
 
 #position
@@ -99,6 +115,16 @@ nav span
 	border-style: none;
 	border-radius: 10px 0 0 10px;
 	width: 12%;
+}
+
+#position:hover
+{
+	background-color: #deebff;
+}
+
+#position:active
+{
+	background-color: #f2f2f2;
 }
 
 #marker_logo
@@ -125,6 +151,22 @@ nav span
 	width:30%
 }
 
+#font_search_button
+{
+	font-family: 'Raleway_Bold';
+}
+
+#search_button:hover
+{
+	background-color: #deebff;
+	color:black;
+}
+
+#search_button:active
+{
+	background-color: #0065fc;
+	color: white;
+}
 /* Filters */
 
 #filter
@@ -134,24 +176,57 @@ nav span
 	justify-content: flex-start;
 	align-items: center;
 	font-family: 'Raleway_Bold';
+	margin: 10px 0 15px 0;
+}
+
+#filter p
+{
+	margin: 0 10px 0 0;
 }
 
 .button_filter
 {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	background-color: white;
 	border-radius: 10px 10px 10px 10px;
 	font-family: 'Raleway_Bold';
 	color: black;
+	margin: 0 10px 0 10px;
+	height:40px;
+	border-style: solid;
+	border-color: #f2f2f2 ;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.button_filter:hover
+{
+	background-color:#deebff ;
+}
+
+.button_filter:active
+{
+	background-color: white;
 }
 
 .button_circle
 {
 	background-color:#deebff;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 20px 20px 20px 20px;
+	width: 40px;
+	height: 40px;
+	margin: 0 10px 0 -10px;
 }
+
+#money_logo, #child_logo, #heart_logo, #pet_logo
+{
+	width: 15px;
+	height: 15px;
+	margin: 13px 0 0 0;
+}
+
+/* Info */
 
 #info
 {
@@ -159,35 +234,52 @@ nav span
 	flex-direction: row;
 	justify-content:flex-start; 
 	align-items: center;
-	margin:0 10px 0 10px;
+	font-size: 13px;
 }
 #circle_info
 {
-	border-radius: 15px 15px 15px 15px;
-	width: 25px;
-	height:25px;
+	border-radius: 12px 12px 12px 12px;
+	width: 20px;
+	height:20px;
 	border-style: solid;
 	border-color: #f2f2f2;
+	margin: 0 10px 0 0;
 }
 
 #info_logo
 {
-	width: 15px;
-	height: 15px;
-	fill: #0065fc;	
+	width: 12px;
+	height: 12px;
+	margin: 4px 0 0 4px;
+
 }
 
 /************************* lodging *************************/
 
+/* Section lodging */
+
 #lodging_popular
 {
 	display: flex;
+	flex-direction: row;
+	align-items:stretch;
 	justify-content: space-between;
 }
 
 #lodging
 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 	background-color: #f2f2f2;
+	width: 85%;
+	margin: 0 15px 0 0;
+	border-radius: 20px 20px 20px 20px;
+}
+
+#lodging_title
+{
+	margin:20px 0 0 25px;
 }
 
 #lodging_title h2
@@ -196,13 +288,39 @@ nav span
 	font-size: 18px;
 }
 
+#show_more
+{
+	margin: 20px 0 30px 25px;
+}
+
+#show_more a
+{
+	font-size: 13px;
+	text-decoration: none;
+	color: black;
+	font-family: 'Raleway_Bold';
+}
+
+#show_more a:hover
+{
+	color:#0065fc
+}
+
+/* Lodging Thumbnail */
+
 #lodging_thumbnail
 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	flex-direction: column;	
+}
+
+.lodging_thumbnail_bis
+{
+	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	
+	justify-content: space-around;
+	align-items: center;
 }
 
 .thumbnail_link
@@ -212,14 +330,59 @@ nav span
 	
 }
 
-.act_thmb
+.l_thumbnail
 {
-	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: white;
+	border-radius: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
 }
 
-#show_more a
+.l_thumbnail h3
 {
-	text-decoration: none;
+	font-family: 'Raleway_Bold';
+	font-size: 13px;
+	margin: 0 10px 0 10px;
+}
+
+.l_thumbnail p
+{
+	font-size: 13px;
+	margin: 0 10px 5px 10px;
+}
+
+.l_thumbnail_image
+{
+	margin: 3px 3px 0 3px;
+		
+}
+
+.l_thumbnail_image img
+{
+	border-radius: 10px 10px 0 0 ;
+	width:180px;
+	height: 100px;
+	object-fit: cover;
+}
+
+
+
+
+
+.star_notation
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+}
+
+.star_notation img
+{
+	height: 10px;
+	width: 10px;
 }
 
 /************************* Popular *************************/
@@ -227,6 +390,9 @@ nav span
 #popular
 {
 	background-color: #f2f2f2;
+	width:35%;
+	margin:0 0 0 15px;
+	border-radius: 20px 20px 20px 20px;
 }
 
 #popular_title
@@ -248,9 +414,17 @@ nav span
 	flex-direction: row;
 	text-decoration: none;
 	color: black;
+	background-color: white;
 }
 
 /************************* Activities *************************/
+
+
+#activities
+{
+	width:100%; 
+	margin: 10px 0 10px 0;
+}
 
 #activities_title h2
 {
@@ -263,7 +437,8 @@ nav span
 	display: flex;
 	justify-content: space-around;
 	flex-direction: row;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	background-color: white;	
 }
 
 /************************* Footer *************************/
