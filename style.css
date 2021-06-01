@@ -24,7 +24,7 @@
 
 body
 {
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 }
 
 main
@@ -42,7 +42,7 @@ header
 	display: flex;
 	justify-content: space-between;
 	align-content: center;
-	margin: 0 0 15px 0;
+	margin: 0 0 1.5em 0;
 }
 
 nav ul
@@ -53,26 +53,32 @@ nav ul
 
 nav li
 {
-	margin: 0 20px 0 20px ;
+	margin: 0 0 0 4em ;
 }
 
 nav a 
 {
-	padding-bottom: 3px;
+	padding-top: 1.8em;
+	padding-bottom: 1em;
 	text-decoration: none;
 	color: #0065fc;
-	font-size: 13px;
+	font-size: 0.8em;
 	font-weight: bold;
 }
 
 nav span
 {
-	font-family: 'Raleway_Bold';
+	font-family: 'Raleway_Bold',sans-serif;
 }
 
 nav a:hover
 {
 	color:black;
+	border-style:solid ;
+	border-top-color: #0065fc;
+	border-bottom: white;
+	border-left: white;
+	border-right: white;	
 }
 
 /************************* Search banner *************************/
@@ -88,14 +94,14 @@ nav a:hover
 
 #title h1
 {
-	font-size: 18px;
-	font-family: 'Raleway_Bold';
+	font-size: 1.1em;
+	font-family: 'Raleway_Bold',sans-serif;
 }
 
 #title p
 {
-	font-size: 13px;
-	margin: -10px 0 15px 0;
+	font-size: 0.8em;
+	margin: -0.6em 0 0.5em 0;
 }
 
 /* Search bar */
@@ -105,15 +111,15 @@ nav a:hover
 	display:flex;
 	flex-direction: row;
 	align-self: flex-start;
-	height: 40px;
-	margin: 0 0 15px 0;
+	height: 2.5em;
+	margin: 0.5em 0 1em 0;
 }
 
 #position
 {
 	background-color: #f2f2f2;
 	border-style: none;
-	border-radius: 10px 0 0 10px;
+	border-radius: 0.8em 0 0 0.8em;
 	width: 12%;
 }
 
@@ -129,18 +135,23 @@ nav a:hover
 
 #marker_logo
 {
-	width: 15px;
-	height: 15px;
-	margin: 2px 0 0 3px;
+	width: 1em;
+	height: 1em;
+	margin: 0.1em 0 0 0.2em;
 }
 
 #search
 {
-	width: 40%;
-	font-family: 'Raleway_Bold';
 	width: 50%;
+	font-family: 'Raleway_Bold',sans-serif;
 	border-color: #f2f2f2;
 	border-style: solid;
+}
+
+::placeholder
+{
+	color:black;
+	opacity:1;
 }
 
 #search_button
@@ -148,13 +159,13 @@ nav a:hover
 	background-color: #0065fc;
 	color: white;
 	border-style: none;
-	border-radius: 0 10px 10px 0 ;
+	border-radius: 0 0.8em 0.8em 0 ;
 	width:35%
 }
 
 #font_search_button
 {
-	font-family: 'Raleway_Bold';
+	font-family: 'Raleway_Bold',sans-serif;
 }
 
 #search_button:hover
@@ -176,13 +187,13 @@ nav a:hover
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	font-family: 'Raleway_Bold';
-	margin: 10px 0 15px 0;
+	font-family: 'Raleway_Bold',sans-serif;
+	margin: 0.5em 0 0.5em 0;
 }
 
 #filter p
 {
-	margin: 0 10px 0 0;
+	margin: 0 0.5em 0 0;
 }
 
 .button_filter
@@ -191,14 +202,13 @@ nav a:hover
 	justify-content: flex-start;
 	align-items: center;
 	background-color: white;
-	border-radius: 10px 10px 10px 10px;
-	font-family: 'Raleway_Bold';
+	font-family: 'Raleway_Bold',sans-serif;
 	color: black;
-	margin: 0 10px 0 10px;
-	height:40px;
+	border-radius: 1.4em 1.4em 1.4em 1.4em;
+	margin: 0 1em 0 1em;
+	height:2.8em;
 	border-style: solid;
 	border-color: #f2f2f2 ;
-	border-radius: 20px 20px 20px 20px;
 }
 
 .button_filter:hover
@@ -215,17 +225,17 @@ nav a:hover
 .button_circle
 {
 	background-color:#deebff;
-	border-radius: 20px 20px 20px 20px;
-	width: 40px;
-	height: 40px;
-	margin: 0 10px 0 -10px;
+	border-radius: 1.4em 1.4em 1.4em 1.4em;
+	width: 2.8em;
+	height: 2.8em;
+	margin: 0 0.5em 0 -0.8em;
 }
 
 #money_logo, #child_logo, #heart_logo, #pet_logo
 {
-	width: 15px;
-	height: 15px;
-	margin: 13px 0 0 0;
+	width: 1.2em;
+	height: 1.2em;
+	margin: 0.8em 0 0 0;
 }
 
 /* Info */
@@ -236,24 +246,24 @@ nav a:hover
 	flex-direction: row;
 	justify-content:flex-start; 
 	align-items: center;
-	font-size: 13px;
+	font-size: 0.8em;
+	margin: 1em 0 1em 0;
 }
 #circle_info
 {
-	border-radius: 12px 12px 12px 12px;
-	width: 20px;
-	height:20px;
+	border-radius: 1em 1em 1em 1em;
+	width: 1.6em;
+	height:1.6em;
 	border-style: solid;
 	border-color: #f2f2f2;
-	margin: 0 10px 0 0;
+	margin: 0 0.5em 0 0;
 }
 
 #info_logo
 {
-	width: 12px;
-	height: 12px;
-	margin: 4px 0 0 4px;
-
+	width: 1em;
+	height: 1em;
+	margin: 0.25em 0 0 0.3em;
 }
 
 /************************* lodging *************************/
@@ -266,42 +276,40 @@ nav a:hover
 	flex-direction: row;
 	align-items:stretch;
 	justify-content: space-between;
-	margin:0 10px 0 10px;
 }
 
 #lodging
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	background-color: #f2f2f2;
 	width: 75%;
-	margin: 0 15px 0 0;
-	border-radius: 20px 20px 20px 20px;
+	margin: 0 0.8em 0 0;
+	border-radius: 1em 1em 1em 1em;
 }
 
 #lodging_title
 {
-	margin:20px 0 0 25px;
+	margin:1em 0 0 1.8em;
 }
 
 #lodging_title h2
 {
-	font-family: 'Raleway_Bold';
-	font-size: 18px;
+	font-family: 'Raleway_Bold',sans-serif;
+	font-size: 1.1em;
 }
 
 #show_more
 {
-	margin: 20px 0 30px 25px;
+	margin: 1em 0 1.5em 1.8em;
 }
 
 #show_more a
 {
-	font-size: 13px;
+	font-size: 0.8em;
 	text-decoration: none;
 	color: black;
-	font-family: 'Raleway_Bold';
+	font-family: 'Raleway_Bold',sans-serif;
 }
 
 #show_more a:hover
@@ -314,7 +322,6 @@ nav a:hover
 #lodging_thumbnail_container
 {
 	display: flex;
-	justify-content: space-between;
 	flex-direction: column;	
 }
 
@@ -323,7 +330,7 @@ nav a:hover
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	margin: 0 1em 0.5em 1em;
 }
 
 .thumbnail_link
@@ -339,9 +346,9 @@ nav a:hover
 	justify-content: space-between;
 	align-items: flex-start;
 	background-color: white;
-	border-radius: 15px 15px 15px 15px;
-	margin: 10px 10px 10px 10px;
-	box-shadow: 2px 2px 5px grey;
+	border-radius: 1em 1em 1em 1em;
+	margin: 0.5em 0.8em 0.5em 0.8em;
+	box-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 .lodging_thumbnail:hover
@@ -356,27 +363,27 @@ nav a:hover
 
 .lodging_thumbnail h3
 {
-	font-family: 'Raleway_Bold';
-	font-size: 13px;
-	margin: 0 10px 0 10px;
+	font-family: 'Raleway_Bold',sans-serif;
+	font-size: 0.8em;
+	margin: 0.3em 0.8em 0.25em 0.8em;
 }
 
 .lodging_thumbnail p
 {
-	font-size: 13px;
-	margin: 0 10px 5px 10px;
+	font-size: 0.8em;
+	margin: 0.25em 0.8em 0.25em 0.8em;
 }
 
 .lodging_thumbnail_image
 {
-	margin: 3px 3px 0 3px;		
+	margin: 0.2em 0.2em 0 0.2em;		
 }
 
 .lodging_thumbnail_image img
 {
-	border-radius: 15px 15px 0 0 ;
-	width:180px;
-	height: 100px;
+	border-radius: 1em 1em 0 0 ;
+	width:11em;
+	height: 6em;
 	object-fit: cover;
 }
 
@@ -385,13 +392,14 @@ nav a:hover
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
-	margin: 0 0 10px 10px;
+	margin: 0.25em 0 0.5em 0.8em;
 }
 
 .star_notation img
 {
-	height: 10px;
-	width: 10px;
+	height: 0.65em;
+	width: 0.65em;
+	margin:0 0.1em 0 0;
 }
 
 /************************* Popular *************************/
@@ -399,9 +407,9 @@ nav a:hover
 #popular
 {
 	background-color: #f2f2f2;
-	width:35%;
-	margin:0 0 0 15px;
-	border-radius: 20px 20px 20px 20px;
+	width:40%;
+	margin:0 0 0 0.8em;
+	border-radius: 1em 1em 1em 1em;
 }
 
 #popular_title
@@ -409,19 +417,19 @@ nav a:hover
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 20px 20px 10px 20px;
+	margin: 1em 1.8em 0.5em 1.8em;
 }
 
 #popular_title img
 {
-	width: 20px;
-	height: 20px;
+	width: 1em;
+	height: 1em;
 }
 
 #popular_title h2
 {
 	font-family: 'Raleway_Bold';
-	font-size: 18px;
+	font-size: 1.1em;
 }
 
 .popular_thumbnail
@@ -429,9 +437,9 @@ nav a:hover
 	display: flex;
 	flex-direction: row;
 	background-color: white;
-	margin: 10px 20px 30px 20px;
-	border-radius: 15px 15px 15px 15px;
-	box-shadow: 2px 2px 5px grey;
+	margin: 0.5em 1.8em 2em 1.8em;
+	border-radius: 1em 1em 1em 1em;
+	box-shadow: 0.1em 0.1em 0.2em grey;
 }
 
 .popular_thumbnail:hover
@@ -449,31 +457,32 @@ nav a:hover
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin:0.5em 0 0.5em 0;
 }
 
 .popular_thumbnail_text h3
 {
 	font-family: 'Raleway_Bold';
-	font-size: 13px;
-	margin: 10px 10px 5px 10px;
+	font-size: 0.8em;
+	margin: 0.3em 0.8em 0.25em 0.8em;
 }
 
 .popular_thumbnail_text p
 {
 	font-size: 13px;
-	margin: 5px 10px 5px 10px;
+	margin: 0.25em 0.8em 0.25em 0.8em;
 }
 
 .popular_thumbnail_image
 {
-	margin: 3px 3px 0 3px;		
+	margin: 0.2em 0.2em 0 0.2em;		
 }
 
 .popular_thumbnail_image img
 {
-	border-radius:15px 0 0 15px ;
-	width:100px;
-	height: 100px;
+	border-radius:1em 0 0 1em ;
+	width: 6em;
+	height: 6.5em;
 	object-fit: cover;
 }
 
@@ -483,19 +492,19 @@ nav a:hover
 #activities
 {
 	width:100%; 
-	margin: 10px 0 10px 0;
+	margin: 2em 0 2em 0;
 }
 
 #activities_title h2
 {
-	font-family: 'Raleway_Bold';
-	font-size: 18px;
+	font-family: 'Raleway_Bold',sans-serif;
+	font-size: 1.1em;
 }
 
 #activities_thumbnail_container
 {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	flex-direction: row;
 	align-items: stretch;
 	background-color: white;		
@@ -505,16 +514,16 @@ nav a:hover
 {
 	display: flex;
 	flex-direction: column;
-	border-radius: 15px 15px 15px 15px;
-	box-shadow: 2px 2px 5px grey;
-	margin: 10px 0 10px 0;	
+	border-radius: 1em 1em 1em 1em;
+	box-shadow: 0.1em 0.1em 0.2em grey;
+	margin: 0.5em 0 0.5em 0;	
 }
 
 .activities_thumbnail h3
 {
-	font-size: 13px;
-	font-family: 'Raleway_Bold';
-	margin: 10px 0 10px 10px;
+	font-size: 0.8em;
+	font-family: 'Raleway_Bold',sans-serif;
+	margin: 1em 0 1em 1em;
 }
 
 .activities_thumbnail:hover
@@ -529,42 +538,52 @@ nav a:hover
 
 .activities_thumbnail_image
 {
-	border-radius: 15px 15px 0 0;
-	width:220px;
+	border-radius: 1em 1em 0 0;
+	width:14em;
 }
 
 .activities_thumbnail_image img 
 { 
-	border-radius:15px 15px 0 0;
+	border-radius:1em 1em 0 0;
 	object-fit: cover;
-	width:220px;			
+	width:14em;			
 }
 
 .activities_thumbnail_half_container img
 {
-	height:300px;
+	height:19em;
 }
 
 .activities_thumbnail_half_container_2
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: stretch;
+	justify-content: space-between;
 }
 
 .activities_thumbnail_half_container_2 img
 {
-	height:120px;
+	height:7.5em;
 }
 
 #pomegues img
 {
-	height: 140px;
+	height: 8.5em;
 }
 
 #frioul img
 {
-	height: 100px;
+	height: 5.5em;
+}
+
+#ndgarde img
+{
+	height: 6.5em;
+}
+
+#longchamp img
+{
+	height: 7.5em;
 }
 
 /************************* Footer *************************/
@@ -576,32 +595,26 @@ footer
 	background-color: #f2f2f2;
 }
 
-
-footer div
+.footer_list
 {
-	display:block;
-	
-	
-	margin-right: 60px;		
+	margin: 1em 6em 1em 0;
 }
 
 footer ul
 {
-	font-size: 13px;
-	margin: 0 50px 0 0;
+	font-size: 0.8em;
 }
 
 .footer_title
 {
-	font-family: 'Raleway_Bold';
-	margin: 20px 0 15px 0;	
+	font-family: 'Raleway_Bold',sans-serif;
+	margin: 0 0 1.2em 0;	
 }
 
 footer li
 {	
-	display: list-item;
 	list-style-type: none;
-	margin:0 0 10px 0;
+	margin:0 0 0.8em 0;
 }
 
 footer a
@@ -610,3 +623,19 @@ footer a
 	color: black;
 }
 
+/************************* responsive tab *************************/
+
+@media all and (min-width: 768px) and (max-width:991px) 
+{
+	
+}
+
+
+
+/************************* responsive phone *************************/
+
+@media all and (max-width:768px)
+{
+
+	
+}
