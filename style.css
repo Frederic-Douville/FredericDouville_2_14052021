@@ -324,7 +324,7 @@ nav li {
 .lodging_thumbnail {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   align-items: flex-start;
   background-color: white;
   border-radius: 1em 1em 1em 1em;
@@ -561,10 +561,10 @@ footer a {
   color: black;
 }
 
-/************************* responsive tab *************************/
+/************************* Responsive tab *************************/
 
 @media all and (max-width: 991px) {
-  /************************* Entire page *************************/
+  /************************* Entire page Tab *************************/
 
   #bloc_page {
     width: auto;
@@ -578,6 +578,8 @@ footer a {
     align-items: stretch;
   }
 
+  /************************* Popular Tab *************************/
+
   #popular {
     width: 100%;
     margin: 1em 0 1em 0;
@@ -587,25 +589,79 @@ footer a {
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
+
+  .popular_thumbnail {
+    width: 14em;
+    height: 8em;
+    margin: 0 1em 2em 1em;
+  }
+
+  .popular_thumbnail_image img {
+    height: 7.65em;
+  }
+
+  /************************* Lodging Tab *************************/
 
   #lodging {
     width: 100%;
     margin: 1em 0 1em 0;
+  }
+
+  /************************* Activities Tab *************************/
+
+  #activities {
+    width: 100%;
+  }
+
+  #activities_title {
+    margin: 0 0 0 2em;
+  }
+
+  #activities_thumbnail_container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 1em 0 1em;
+  }
+
+  #activities_thumbnail_container img {
+    height: 6em;
+  }
+
+  .activities_thumbnail {
+    width: 14em;
+    margin: 1em 1em 1em 1em;
+  }
+
+  .activities_thumbnail_image img {
+    width: 14em;
+  }
+
+  .activities_thumbnail_half_container_2 {
+    flex-direction: row;
+    justify-content: stretch;
+  }
+
+  /************************* Footer Tab *************************/
+
+  .footer_list {
+    margin: 1em 4em 1em 0;
   }
 }
 
 /************************* responsive mobile *************************/
 
 @media all and (max-width: 768px) {
-  /************************* Entire page *************************/
+  /************************* Entire page Mobile*************************/
 
   #bloc_page {
     width: 100%;
     margin: auto;
   }
 
-  /************************* Header *************************/
+  /************************* Header Mobile*************************/
 
   header {
     flex-direction: column;
@@ -663,7 +719,7 @@ footer a {
     display: none;
   }
 
-  /************************* Search banner *************************/
+  /************************* Search banner Mobile *************************/
 
   /* Title */
 
@@ -785,30 +841,156 @@ footer a {
     align-content: initial;
   }
 
-  /************************* Popular *************************/
+  /************************* Popular Mobile *************************/
 
   #popular {
     border-radius: 0 0 0 0;
+  }
+
+  #popular_title h2 {
+    font-size: 1.4em;
+  }
+
+  #popular_title img {
+    width: 1.5em;
+    height: 1.5em;
   }
 
   #popular_thumbnail_container {
     width: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  /************************* Lodging *************************/
+  .popular_thumbnail {
+    width: 22em;
+  }
+
+  .popular_thumbnail_image {
+    margin: 0.3em 0 0.3em 0.3em;
+  }
+
+  .popular_thumbnail_image img {
+    width: 7em;
+    height: 7.4em;
+  }
+
+  .popular_thumbnail h3 {
+    font-size: 1.1em;
+    margin: 0 1em 0.5em 1em;
+  }
+
+  .popular_thumbnail p {
+    font-size: 1em;
+    margin: 0.5em 0 0 1em;
+  }
+
+  .star_notation {
+    margin: 0 0 0.5em 1em;
+  }
+
+  .star_notation img {
+    width: 0.8em;
+    height: 0.8em;
+  }
+
+  /************************* Lodging Mobile *************************/
 
   #lodging {
     background: white;
   }
 
+  #lodging_title h2 {
+    font-size: 1.4em;
+  }
+
   #lodging_thumbnail_container {
     width: 100%;
-    justify-content: center;
+    align-items: center;
   }
 
   .lodging_thumbnail_half_container {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .lodging_thumbnail {
+    width: 22em;
+    height: 13em;
+  }
+
+  .lodging_thumbnail_image {
+    margin: 0.3em 0 0.3em 0.3em;
+  }
+
+  .lodging_thumbnail_image img {
+    width: 21.5em;
+    height: 7.4em;
+  }
+
+  .lodging_thumbnail h3 {
+    font-size: 1.1em;
+    margin: 0 1em 0.5em 1em;
+  }
+
+  .lodging_thumbnail p {
+    font-size: 1em;
+    margin: 0.5em 0 0.5em 1em;
+  }
+
+  #show_more a {
+    font-size: 1.1em;
+    margin: 0 0 0 2em;
+  }
+
+  /************************* Activities Mobile *************************/
+  #activities {
+    margin: 0 0 1em 0;
+  }
+
+  #activities_title h2 {
+    font-size: 1.4em;
+  }
+
+  #activities_thumbnail_container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 0 0;
+  }
+
+  #activities_thumbnail_container img {
+    height: 10em;
+  }
+
+  .activities_thumbnail_half_container_2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activities_thumbnail {
+    width: 22em;
+    height: 13em;
+  }
+
+  .activities_thumbnail h3 {
+    font-size: 1.1em;
+    margin: 0.5em 0 0.5em 1em;
+  }
+
+  .activities_thumbnail_image img {
+    width: 22em;
+    height: 10em;
+  }
+
+  /************************* Footer Mobile *************************/
+
+  footer {
+    flex-direction: column;
+  }
+
+  .footer_list {
+    font-size: 1.2em;
+    margin: 1em 0 1em 1em;
   }
 }
