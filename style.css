@@ -195,16 +195,31 @@ nav li {
 
 .button_filter {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   background-color: white;
   font-family: "Raleway_Bold", sans-serif;
   color: black;
   border-radius: 1.4em 1.4em 1.4em 1.4em;
-  margin: 0 1em 0 1em;
   height: 2.8em;
+  margin: 0 1em 0 1em;
   border-style: solid;
   border-color: #f2f2f2;
+}
+
+.button_filter img {
+  background-color: #deebff;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50% 50% 50% 50%;
+  padding: 0.8em 0.8em 0.8em 0.8em;
+  display: inline;
+  margin: 0 0 0 -1em;
+}
+
+.button_filter span {
+  padding:0 1em 0 1em;
 }
 
 .button_filter:hover {
@@ -214,23 +229,6 @@ nav li {
 
 .button_filter:active {
   background-color: white;
-}
-
-.button_circle {
-  background-color: #deebff;
-  border-radius: 1.4em 1.4em 1.4em 1.4em;
-  width: 2.8em;
-  height: 2.8em;
-  margin: 0 0.5em 0 -0.8em;
-}
-
-#money_logo,
-#child_logo,
-#heart_logo,
-#pet_logo {
-  width: 1.2em;
-  height: 1.2em;
-  margin: 0.8em 0 0 0;
 }
 
 /* Info */
@@ -818,20 +816,18 @@ footer a {
     border-radius: 2em 2em 2em 2em;
   }
 
-  .button_circle {
-    width: 4em;
-    height: 4em;
-    border-radius: 2em 2em 2em 2em;
-  }
-
-  #money_logo,
-  #child_logo,
-  #heart_logo,
-  #pet_logo {
+  .button_filter img {
     width: 1.5em;
     height: 1.5em;
-    margin: 1.2em 0 0 0;
+    padding: 1.2em 1.2em 1.2em 1.2em;
+    margin: 0 0 0 -1em;
   }
+
+  .button_filter span{
+    font-size: 1.2em;
+  }
+
+
 
   /* Info */
 
