@@ -565,7 +565,7 @@ footer a {
   /************************* Entire page Tab *************************/
 
   #bloc_page {
-    width: auto;
+    width: 100%;
     margin: auto;
   }
 
@@ -621,7 +621,7 @@ footer a {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 1em 0 1em;
+    margin: 0 0 0 0;
   }
 
   #activities_thumbnail_container img {
@@ -630,7 +630,7 @@ footer a {
 
   .activities_thumbnail {
     width: 14em;
-    margin: 1em 1em 1em 1em;
+    margin: 1em 1.5em 1em 1.5em;
   }
 
   .activities_thumbnail_image img {
@@ -663,7 +663,6 @@ footer a {
 
   header {
     flex-direction: column;
-    justify-content: stretch;
   }
 
   /* Logo and subscribe */
@@ -673,7 +672,8 @@ footer a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 1em 0 1em;
+    margin: 0 2em 0 1em;
+    min-width: 21em;
   }
 
   #subscribe_link_phone {
@@ -688,10 +688,15 @@ footer a {
 
   /* Navigation link */
 
+  header nav {
+    min-width: 24em;
+  }
+
   #header_link {
     width: 100%;
     display: flex;
     margin-left: -2.5em;
+    flex-direction: row;
   }
 
   .h_link {
@@ -721,9 +726,14 @@ footer a {
 
   /* Title */
 
+  #search_banner {
+    flex-wrap: wrap;
+  }
+
   #title {
     align-self: center;
     margin: 0 2em 0 2em;
+    min-width: 20em;
   }
 
   #title h1 {
@@ -742,6 +752,7 @@ footer a {
     height: 3em;
     margin: 2em 0 1em 0;
     width: 100%;
+    min-width: 20em;
   }
 
   #position {
@@ -833,16 +844,20 @@ footer a {
     align-self: center;
     font-size: 1em;
     align-content: initial;
+    min-width: 20em;
   }
 
   /************************* Popular Mobile *************************/
 
   #popular {
     border-radius: 0 0 0 0;
+    width: 100%;
+    min-width: 23.5em;
   }
 
   #popular_title h2 {
     font-size: 1.4em;
+    min-width: 13em;
   }
 
   #popular_title img {
@@ -851,10 +866,10 @@ footer a {
   }
 
   #popular_thumbnail_container {
-    width: auto;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .popular_thumbnail {
@@ -893,15 +908,19 @@ footer a {
 
   #lodging {
     background: white;
+    margin-top: 0;
   }
 
   #lodging_title h2 {
     font-size: 1.4em;
+    min-width: 13em;
   }
 
   #lodging_thumbnail_container {
     width: 100%;
+    flex-wrap: wrap;
     align-items: center;
+    justify-self: center;
   }
 
   .lodging_thumbnail_half_container {
@@ -912,6 +931,7 @@ footer a {
   .lodging_thumbnail {
     width: 22em;
     height: 13em;
+    margin: 1.5em 0 1.5em 0;
   }
 
   .lodging_thumbnail_image {
@@ -933,6 +953,10 @@ footer a {
     margin: 0.5em 0 0.5em 1em;
   }
 
+  #show_more {
+    min-width: 10em;
+  }
+
   #show_more a {
     font-size: 1.1em;
     margin: 0 0 0 2em;
@@ -945,6 +969,7 @@ footer a {
 
   #activities_title h2 {
     font-size: 1.4em;
+    min-width: 13em;
   }
 
   #activities_thumbnail_container {
@@ -972,6 +997,11 @@ footer a {
     margin: 0.5em 0 0.5em 1em;
   }
 
+  .activities_thumbnail_image {
+    width: 22em;
+    height: 10em;
+  }
+
   .activities_thumbnail_image img {
     width: 22em;
     height: 10em;
@@ -981,10 +1011,12 @@ footer a {
 
   footer {
     flex-direction: column;
+    min-width: 23.5em;
   }
 
   .footer_list {
     font-size: 1.2em;
     margin: 1em 0 1em 1em;
+    min-width: 15em;
   }
 }
