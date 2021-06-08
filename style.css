@@ -219,7 +219,7 @@ nav li {
 }
 
 .button_filter span {
-  padding:0 1em 0 1em;
+  padding: 0 1em 0 1em;
 }
 
 .button_filter:hover {
@@ -561,7 +561,7 @@ footer a {
 
 /************************* Responsive tab *************************/
 
-@media all and (max-width: 991px) {
+@media screen and (max-width: 991px) {
   /************************* Entire page Tab *************************/
 
   #bloc_page {
@@ -651,7 +651,7 @@ footer a {
 
 /************************* responsive mobile *************************/
 
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /************************* Entire page Mobile*************************/
 
   #bloc_page {
@@ -823,11 +823,9 @@ footer a {
     margin: 0 0 0 -1em;
   }
 
-  .button_filter span{
+  .button_filter span {
     font-size: 1.2em;
   }
-
-
 
   /* Info */
 
