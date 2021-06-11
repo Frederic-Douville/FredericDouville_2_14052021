@@ -244,26 +244,19 @@ nav li {
 /* Info */
 
 #info {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
   font-size: 0.8em;
   margin: 1em 0 1em 0;
-}
-#circle_info {
-  border-radius: 1em 1em 1em 1em;
-  width: 1.6em;
-  height: 1.6em;
-  border-style: solid;
-  border-color: #f2f2f2;
-  margin: 0 0.5em 0 0;
 }
 
 #info_logo {
   width: 1em;
   height: 1em;
-  margin: 0.25em 0 0 0.3em;
+  margin: -0.7em 0.5em 0 0;
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  border-radius: 50% 50% 50% 50%;
+  border-style: solid;
+  border-color: #f2f2f2;
+  float: left;
 }
 
 /***********************************************************/
